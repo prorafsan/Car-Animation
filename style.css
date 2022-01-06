@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sky{
+    background-image: url(img/sky.jpg);
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-size: cover;
+    position: relative;
+}
+.rode{
+    background-image: url(img/road.jpg);
+    position: absolute;
+    height: 200px;
+    width: 500%;
+    bottom: 0;
+    background-repeat: repeat-x;
+    animation: highway 3s linear infinite;
+    right: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+}
+@keyframes highway{
+    100%{
+        transform: translatex(-1300px)
+    }
+}
+.car{
+    background-image: url(img/car.png);
+    height: 416px;
+    background-repeat: no-repeat;
+    width: 1000px;
+    background-size: 400px;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    animation: car 1s linear infinite;
+    z-index: 3;
+}
+@keyframes car{
+    0%{
+        transform: translatey(1px);
+    }
+    50%{
+        transform: translatey(-1px);
+        
+    }
+    100%{
+        transform: translatey(1px);
+        
+    }
+}
+.tree{
+    background-image: url(img/city.png);
+    height: 400px;
+    background-repeat: no-repeat;
+    margin-top: 220px;
+    z-index: 2;
+    animation: city 5s linear infinite;
+    background-repeat: repeat-x;
+    width: 500%;
+}
+@keyframes city{
+    100%{
+        transform: translate(-400px)
+    }
+}
+.will1 img{
+    width: 80px;
+    position: absolute;
+    top: 85px;
+    left: 30px;
+    animation: will 1s linear infinite;
+}
+.will2 img{
+    width: 80px;
+    position: absolute;
+    top: 85px;
+    left: 275px;
+    animation: will 1s linear infinite;
+}
+@keyframes will{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.colo{
+    background-color: black;
+    height: 200px;
+}
+
+
+
+
